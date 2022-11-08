@@ -30,20 +30,22 @@
   color: black;
 }
 
-.flex-container {
+.title-box {
   display: flex;
   background-color: white;
+  justify-content: center;
+  align-items: center;
+  height: 53em;
+  background-image: url(images/Starry-Night-canvas-Vincent-van-Gogh-New-1889.webp);
+  background-size: cover;
+
 }
 
-.flex-container > div {
-  background-color: DodgerBlue;
-  color: white;
-  width: 300px;
-  height: 200px;
-  margin: 20px;
-  text-align: center;
-  line-height: 100px;
-  font-size: 30px;
+.title-box .title {
+    font-family:fantasy;
+    font-size: 10em;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 10px 5px rgb(1, 18, 71);
 }
 
 h1 {
@@ -55,23 +57,14 @@ h1 {
 </head>
 <body>
     <div class="navigation">
-        <a href="home.html">Home</a>
+        <a class = "active" href="home.html">Home</a>
         <a href="portfolio.html">Portfolio</a>
-        <a class = "active" href="schedule.html">Schedule</a>
+        <a href="schedule.html">Schedule</a>
         <a href="commissionPage.html">Commissions</a>
       </div>
 
-    <h1>Schedule:</h1>
-
-    <div class="flex-container">
-        <div>
-        NYC: June 17th
-        </div>
-        <div>2</div>
-        <div>3</div> 
-        <div>4</div>
-        <div>5</div>
-    </div>
-
+      <div class="title-box">
+        <p class="title">Vincent Van Gogh</p>
+      </div>
 </body>
 </html>
