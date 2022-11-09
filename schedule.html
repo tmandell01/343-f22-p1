@@ -49,6 +49,8 @@
   border-style: solid;
   padding: 30px;
   padding-top: 10px;
+  padding-bottom: 100px;
+  font-family: fantasy;
 }
 
 .flex-container img {
@@ -58,6 +60,18 @@
 
 h1 {
     font: sans-serif;
+}
+
+h2 {
+    font: sans-serif;
+}
+
+.request {
+  border-color: black;
+  border-width: 5px;
+  border-style: dotted;
+  padding: 30px;
+  padding-top: 10px;
 }
 
 </style>
@@ -81,20 +95,36 @@ h1 {
         </div>
         <div>
           Atlanta: July 5th
-          <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/436535/796067/main-image" alt="Wheat Field with Cypresses">
+          <img src="https://cdn.britannica.com/78/43678-050-F4DC8D93/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg" alt="Starry Night">
           <input type="submit" value="Reserve Tickets">
         </div>
         <div>
           LA: July 28th
-          <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/436535/796067/main-image" alt="Wheat Field with Cypresses">
+          <img src="https://www.vincentvangogh.org/images/self-portrait.jpg" alt="Self Portrait">
           <input type="submit" value="Reserve Tickets">
         </div> 
         <div>
-          LA: July 28th
-          <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/436535/796067/main-image" alt="Wheat Field with Cypresses">
+          Paris: August 12th
+          <img src="https://artincontext.org/wp-content/uploads/2022/07/Van-Gogh-Sunflowers-Price.jpg" alt="Sunflowers">
           <input type="submit" value="Reserve Tickets">
         </div>
-        <div>5</div>
+    </div>
+
+    <div class="request">
+      <h2>Private showing request form:</h2>
+      <label for="first-name">First name:</label>
+      <input type="text" id="first-name" name="first-name">
+      <br>
+      <br>
+      <label for="last-name">Last name:</label>
+      <input type="text" id="last-name" name="last-name">
+      <br>
+      <br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+      <br>
+      <br>
+      <input type="submit" value="Submit">      
     </div>
 
 </body>
