@@ -7,6 +7,22 @@
     <title>Document</title>
     <link rel="icon" type="png" href="https://cdn-icons-png.flaticon.com/512/214/214275.png">
 <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:fantasy;
+  font-size: 40px;
+
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
 .navigation {
   overflow: hidden;
   background-color: #333;
@@ -30,6 +46,35 @@
   color: black;
 }
 
+.row {
+  background-color: rgb(149, 149, 149);
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 33.333333%;
+  padding: 0 1em;
+}
+
+.column img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  vertical-align: middle;
+  transition: transform .2s;
+}
+
+.column img:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
 </style>
 
 </head>
@@ -42,7 +87,37 @@
         <a href="index.html">About</a>
       </div>
 
-    <h1>Commissions Page</h1>
+<div class="header" id="myHeader">
+  <h1>Portfolio</h1>
+</div>
+
+<div class="row"> 
+  <div class="column">
+    <img src="/images/Starry-Night-canvas-Vincent-van-Gogh-New-1889.webp" style="width:100%">
+    <img src="/images/self-portrait-of-a-painter.webp" style="width:100%">
+    <img src="/images/garden-with-courting-couples.webp" style="width:100%">
+    <img src="/images/the-potato-eaters.webp" style="width:100%">
+    <img src="/images/carafe-and-dish-with-citrus-fruit.webp" style="width:100%">
+    <img src="/images/entrance-to-a-quarry.webp" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/images/the-langlois-bridge.webp" style="width:100%">
+    <img src="/images/the-sower.webp" style="width:100%">
+    <img src="/images/the-yellow-house.webp" style="width:100%">
+    <img src="/images/the-nedroom.webp" style="width:100%">
+    <img src="/images/wheatfield-with-a-reaper.webp" style="width:100%">
+    <img src="/images/tiger-in-the-jungle.webp" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="/images/sunflowers.webp" style="width:100%">
+    <img src="/images/wheatfield-under-thunderclouds.webp" style="width:100%">
+    <img src="/images/haymaking.webp" style="width:100%">
+    <img src="/images/window-in-the-studio.webp" style="width:100%">
+    <img src="/images/old-vineyard-with-peasant-woman.webp" style="width:100%">
+    <img src="/images/trees-and-undergrowth.webp" style="width:100%">
+  </div>
+  
+</div>
 
 </body>
 </html>
