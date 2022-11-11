@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" type="png" href="https://cdn-icons-png.flaticon.com/512/214/214275.png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/214/214275.png">
 <style>
 .navigation {
   overflow: hidden;
@@ -29,27 +29,31 @@
   background-color: lightsalmon;
   color: black;
 }
+body {
+  height: 100%;
+}
 
 .title-box {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+
   background-color: white;
   justify-content: center;
   align-items: center;
-  height: 53em;
   background-image: url(images/Starry-Night-canvas-Vincent-van-Gogh-New-1889.webp);
   background-size: cover;
 
 }
 
 .title-box .title {
-    font-family:fantasy;
     font-size: 10em;
     color: rgb(255, 255, 255);
     text-shadow: 10px 10px 5px rgb(1, 18, 71);
 }
 
-h1 {
-    font: sans-serif;
+* {
+  font-family: Langlois
 }
 
 </style>
