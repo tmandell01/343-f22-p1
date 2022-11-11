@@ -1,0 +1,32 @@
+.navigation {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navigation a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: fantasy;
+  }
+  
+  .navigation a:hover {
+    color: grey;
+  }
+  
+  .navigation a.active {
+    background-color: lightsalmon;
+    color: black;
+  }
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+}
