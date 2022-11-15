@@ -12,15 +12,13 @@
 }
 
 body {
-  margin: 0;
   font-family:fantasy;
-  font-size: 40px;
 
 }
 
 .header {
   text-align: center;
-  padding: 32px;
+  padding-bottom: 32px;
 }
 
 .row {
@@ -28,6 +26,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  font-size: 40px;
+
 }
 
 /* Create two equal columns that sits next to each other */
@@ -76,14 +76,16 @@ body {
 <link rel="stylesheet" href="css/p1.css">
 
 </head>
+<header>
+  <div class="navigation">
+    <a href="home.html">Home</a>
+    <a class = "active" href="portfolio.html">Portfolio</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="commissionPage.html">Commissions</a>
+    <a href="index.html">About</a>
+  </div>
+</header>
 <body>
-    <div class="navigation">
-        <a href="home.html">Home</a>
-        <a class = "active" href="portfolio.html">Portfolio</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="commissionPage.html">Commissions</a>
-        <a href="index.html">About</a>
-      </div>
 
 <div class="header" id="myHeader">
   <h1>Portfolio</h1>
